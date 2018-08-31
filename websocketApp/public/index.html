@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title> Laurie's Websocket Chat</title>
+        <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.7.3/socket.io.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Molengo" rel="stylesheet"> 
+        <link href="/style.css" rel="stylesheet" />
+    </head>
+    <body>
+            <div class="container">
+        <div id="chatTitle">
+            <h1> LOCALHOSTERS </h1>
+            <small> TASK OF THE DAY: HUSTLE.  </small>
+            </div>
+             
+            <div id="chat-window">
+                <div id="output"></div>
+                <div id="feedback"></div>
+            </div>
+            <div class='inputs'>          
+                 <!--Where Users will send compose their messages-->
+            <input id="handle" type="text" placeholder="USERNAME" />
+            <input id="message" type="text" placeholder="MESSAGE" />
+            <button id ="send"class="pure-button pure-button-primary"> Send </button>
+            </div>
+        </div>
+    </body>
+    <script src="/chat.js"></script>
+</html>
